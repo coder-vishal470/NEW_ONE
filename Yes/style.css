@@ -1,0 +1,90 @@
+/* YES PAGE BODY */
+.yes-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #efe9ff, #cdbbff, #b59cff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* FLOATING HEARTS (PURPLE) */
+.yes-page .heart {
+  position: fixed;
+  bottom: -30px;
+  font-size: 22px;
+  animation: heartFloat linear infinite;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* YES CARD */
+.yes-card {
+  width: 420px;
+  padding: 50px 45px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 34px;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(92, 64, 186, 0.45);
+  animation: fadeUp 0.8s ease;
+  z-index: 10;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* EMOJI */
+.yes-emoji {
+  font-size: 64px;
+  margin-bottom: 20px;
+  animation: softBounce 2.5s infinite;
+}
+
+@keyframes softBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* TITLE */
+.yes-card h1 {
+  font-size: 26px;
+  color: #5b3fd6;
+  margin-bottom: 18px;
+}
+
+.yes-card h1 span {
+  color: #7b5cff;
+}
+
+/* TEXT */
+.highlight {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.message {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+/* LOVE LINE */
+.love {
+  font-size: 16px;
+  color: #6a4cff;
+  font-weight: 600;
+}
